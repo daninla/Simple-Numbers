@@ -1,10 +1,10 @@
-i = 0;
-n = 0;
-while (i < 5) {
-  i++;
-  if (i === 3) {
-    continue;
+"use strict";
+
+simple_num: for (let i = 0; i <= 100; i++) {
+  for (let j = 2; j <= 100; j++) {
+    if (i % j === 0 && j !== 1 && j !== i) {
+      continue simple_num;
+    }
   }
-  n += i;
+  console.log(i);
 }
-console.log(n);
